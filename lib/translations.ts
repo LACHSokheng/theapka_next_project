@@ -1,11 +1,13 @@
-export type Language = "en" | "km"
+export type Language = "en" | "km";
 
 export const translations: Record<Language, Record<string, string>> = {
   en: {
-    coupleNames: "Sophea & Sokha's Wedding",
-    heroSubtitle: "Together Forever",
+    title: "Wedding celebration",
+    coupleNames: "En Vordin & Lach Sokheng Wedding",
+    heroSubtitle: "Please be respectfully invited.",
     heroBigText: "Join us as we celebrate our love and commitment",
-    heroSmallText: "We would be honored to have you share in our special day as we begin our journey together",
+    heroSmallText:
+      "We would be honored to have you share in our special day as we begin our journey together",
     ourStory: "Our Story",
     storyText:
       "Our journey began in the heart of Cambodia, where our paths crossed and our hearts found their match. Through every moment, we have grown together, supporting and loving each other unconditionally. Today, we are thrilled to share our happiness with everyone we cherish.",
@@ -18,7 +20,8 @@ export const translations: Record<Language, Record<string, string>> = {
     locationLabel: "Location",
     eventLocation: "Phnom Penh, Cambodia",
     moreInfo: "More Information",
-    qrDescription: "Scan the QR code to view more details, photos, and to confirm your attendance.",
+    qrDescription:
+      "Scan the QR code to view more details, photos, and to confirm your attendance.",
     qrLabel: "Wedding Website",
     rsvpLabel: "RSVP",
     rsvpTitle: "Please Confirm Your Attendance",
@@ -39,10 +42,13 @@ export const translations: Record<Language, Record<string, string>> = {
     allRights: "All rights reserved",
   },
   km: {
-    coupleNames: "សុផា និង សុខា - ពិធីថ្នាក់ដ្ឋាន",
-    heroSubtitle: "រស់នៅជាមួយគ្នាជារៀងរហូត",
-    heroBigText: "សូមចូលរួមក្នុងពិធីប្រារព្ធដែលបង្ហាញពីស្នេហ៍ និងសច្ចាប្បន្នបង្ केरам",
-    heroSmallText: "យើងរីករាយក្នុងការរៀបចំឱ្យលោកអ្នកចូលរួមក្នុងថ្ងៃសំខាន់ៗរបស់យើង នៅពេលដែលយើងចាប់ផ្តើមដំណើរដ៏ស្វាគមន៍",
+    title: "សិរីមង្គលអាពាហ៍ពិពាហ៍",
+    coupleNames: "វ័រឌីន និង សុខហេង",
+    heroSubtitle: "សូមគោរពអញ្ជើញ",
+    heroBigText:
+      "សូមចូលរួមក្នុងពិធីប្រារព្ធដែលបង្ហាញពីស្នេហ៍ និងសច្ចាប្បន្នបង្ केरам",
+    heroSmallText:
+      "យើងរីករាយក្នុងការរៀបចំឱ្យលោកអ្នកចូលរួមក្នុងថ្ងៃសំខាន់ៗរបស់យើង នៅពេលដែលយើងចាប់ផ្តើមដំណើរដ៏ស្វាគមន៍",
     ourStory: "រឿងរបស់យើង",
     storyText:
       "ដំណើរនៃយើងបានចាប់ផ្តើមនៅកណ្តាលប្រទេសកម្ពុជា ដែលយើងបានរកឃើញស្នេហ៍ដ៏ជម្រាលស្មោះស្តាប់។ ក្នុងរៀងរាល់ដង់ យើងបានដកមកកាន់គ្នា ដោយគាំទង់ និងស្នេហ៍ដែលគ្មានលក្ខណ្ឌ។ ថ្ងៃនេះ យើងរីករាយក្នុងការដែលបានកែលម្អកម្លាំងរបស់យើង",
@@ -55,7 +61,8 @@ export const translations: Record<Language, Record<string, string>> = {
     locationLabel: "ទីតាំង",
     eventLocation: "ព្នំពេញ ប្រទេសកម្ពុជា",
     moreInfo: "ព័ត៌មានលម្អិត",
-    qrDescription: "សូមស្កេនលេខលេខកូដដែលបានផ្តល់ជូនដើម្បីទស្សន៍ទាយលម្អិត រូបថត និងបង្ហាញការចូលរួម",
+    qrDescription:
+      "សូមស្កេនលេខលេខកូដដែលបានផ្តល់ជូនដើម្បីទស្សន៍ទាយលម្អិត រូបថត និងបង្ហាញការចូលរួម",
     qrLabel: "គេហទំព័រលក្ខណ៍ពិសេស",
     rsvpLabel: "RSVP",
     rsvpTitle: "សូមបញ្ជាក់ពីការចូលរួមរបស់លោកអ្នក",
@@ -75,4 +82,4 @@ export const translations: Record<Language, Record<string, string>> = {
     footer: "សូមអរគុណដែលបានរៀបចំការលើកលម្អរមួយជាមួយយើង",
     allRights: "រក្សាសិទ្ធិ",
   },
-}
+};

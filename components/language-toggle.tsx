@@ -1,23 +1,40 @@
-"use client"
+"use client";
 
-import type { Language } from "@/lib/translations"
+import Image from "next/image";
+import type { Language } from "@/lib/translations";
 
 interface LanguageToggleProps {
-  currentLanguage: Language
-  onLanguageChange: () => void
+  currentLanguage: Language;
+  onLanguageChange: () => void;
 }
 
-export default function LanguageToggle({ currentLanguage, onLanguageChange }: LanguageToggleProps) {
+export default function LanguageToggle({
+  currentLanguage,
+  onLanguageChange,
+}: LanguageToggleProps) {
+  const enImg = "/en.png";
+  const khImg = "/kh.png";
+
   return (
-    <div className="fixed top-4 right-4 z-50 flex gap-2">
+    <div className="fixed top-4 right-4 z-50">
       <button
         onClick={onLanguageChange}
-        className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-          currentLanguage === "en" ? "bg-accent text-accent-foreground" : "bg-muted text-muted-foreground"
+        className={`relative w-12 h-12 rounded-lg overflow-hidden transition-all duration-300 ${
+          currentLanguage === "en" ? "shadow-lg scale-105" : "shadow-md"
+        }`}
+        title={`Switch to ${currentLanguage === "en" ? "Khmer" : "English"}`}
+        aria-label={`Current language: ${
+          currentLanguage === "en" ? "English" : "Khmer"
         }`}
       >
-        {currentLanguage === "en" ? "EN" : "KH"}
+        <Image
+          src={currentLanguage === "en" ? enImg : khImg}
+          alt={currentLanguage === "en" ? "English" : "Khmer"}
+          fill
+          className="object-cover"
+          priority
+        />
       </button>
     </div>
-  )
+  );
 }
