@@ -59,8 +59,7 @@ export const translations: Record<Language, Record<string, string>> = {
     locationLabel: "ទីតាំង",
     eventLocation: "ព្នំពេញ ប្រទេសកម្ពុជា",
     moreInfo: "ព័ត៌មានលម្អិត",
-    qrDescription:
-      "សូមស្កេនលេខលេខកូដដែលបានផ្តល់ជូនដើម្បីទស្សន៍ទាយលម្អិត រូបថត និងបង្ហាញការចូលរួម",
+    qrDescription: "សូមស្កេន QR កូដដើម្បីមើលព័ត៌មានលម្អិតអំពីទីតាំងកម្មវិធី។",
     qrLabel: "គេហទំព័រលក្ខណ៍ពិសេស",
     rsvpLabel: "RSVP",
     rsvpTitle: "សូមបញ្ជាក់ពីការចូលរួមរបស់លោកអ្នក",
