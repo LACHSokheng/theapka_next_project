@@ -16,7 +16,7 @@ export default function LanguageToggle({
   const khImg = "/kh.png";
 
   return (
-    <div className="fixed top-4 right-4 z-50">
+    <div className="fixed top-4 letf-4 z-50">
       <button
         onClick={onLanguageChange}
         className={`relative w-12 h-12 rounded-lg overflow-hidden transition-all duration-300 ${
