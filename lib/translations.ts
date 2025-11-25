@@ -40,6 +40,8 @@ export const translations: Record<Language, Record<string, string>> = {
     totalResponses: "Total Responses",
     footer: "Thank you for celebrating with us",
     allRights: "All rights reserved",
+    paymentTitle: "Payment QR Codes",
+    paymentSub: "Scan or click on the QR Code to join hands.",
   },
   km: {
     title: "សិរីមង្គលអាពាហ៍ពិពាហ៍",
@@ -78,5 +80,7 @@ export const translations: Record<Language, Record<string, string>> = {
     totalResponses: "ចម្លើយសរុប",
     footer: "សូមអរគុណដែលបានរៀបចំការលើកលម្អរមួយជាមួយយើង",
     allRights: "រក្សាសិទ្ធិ",
+    paymentTitle: "ចងដៃតាមរយៈ QR Code",
+    paymentSub: "ស្កែន ឬ ចុចលើ QR Code ដើម្បីធ្វើការចងដៃ",
   },
 };
