@@ -57,11 +57,11 @@ export default function QRPaySection({
         <div className="text-center">
           <h2
             id="qr-section-title"
-            className="text-2xl sm:text-3xl font-bold text-gray-900"
+            className="font-moul text-2xl sm:text-3xl font-bold text-gray-900"
           >
             {t.paymentTitle}
           </h2>
-          <p className="mt-2 text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+          <p className="font-bokor mt-2 text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
             {t.paymentSub}
           </p>
         </div>
@@ -88,7 +88,7 @@ export default function QRPaySection({
                 </p>
               </div>
 
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 relative rounded-lg overflow-hidden bg-gray-50 p-1">
                   <Image
                     src={qrKhUrl}

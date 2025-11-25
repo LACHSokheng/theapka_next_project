@@ -87,7 +87,7 @@ export default function QRCodeSection({
           <iframe
             src={mapSrc}
             title="Google Map"
-            className="w-full aspect-square sm:aspect-[4/3] md:aspect-[16/9]"
+            className="w-full aspect-square sm:aspect-4/3 md:aspect-video"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />

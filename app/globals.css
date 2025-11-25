@@ -4,6 +4,15 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  /* ---------- << FONTS >> --------- */
+  --font-bokor: "Bokor";
+  --font-moul: "Moul";
+  --font-moulpali: "Moulpali";
+  --font-suwannaphum: "Suwannaphum";
+  --font-playfair: "Playfair";
+  --font-montserrat: "Montserrat";
+
+  /* ---------- << COLORS >> --------- */
   --background: oklch(0.98 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -40,6 +49,37 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* ---------- << FONTS >> ---------  */
+.font-bokor {
+  font-family: var(--font-bokor);
+}
+.font-moul {
+  font-family: var(--font-moul);
+}
+.font-moulpali {
+  font-family: var(--font-moulpali);
+}
+.font-suwannaphum {
+  font-family: var(--font-suwannaphum);
+}
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+/* English utility classes for local fonts */
+.font-imperialScript {
+  font-family: var(--font-ImperialScript);
+}
+.font-missFajardose {
+  font-family: var(--font-MissFajardose);
+}
+.font-oswald {
+  font-family: var(--font-oswald);
+}
+
+/* ---------- << DARK THEME COLORS >> --------- */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ language }: HeroSectionProps) {
   const t = translations[language];
-  const bgImageUrl = "/heros/wedding-couple-in-cambodian-temple.jpg";
+  const bgImageUrl = "/heros/gold-bg.jpg";
   const vectorImg = "/heros/vector-frame.png";
   const frameImg = "/heros/gold-frame.png";
 
@@ -51,7 +51,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
 
       {/* Content */}
       <div className="relative z-20 text-center text-white max-w-2xl">
-        <h1 className="font-khmer text-4xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8">
+        <h1 className="font-moul text-4xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8">
           {t.title}
         </h1>
 
@@ -65,7 +65,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
             className="w-56 sm:w-72 md:w-96 h-auto"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <p className="font-khmer text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-lg">
+            <p className="font-bokor text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-lg">
               {t.coupleNames}
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
           />
         </div>
 
-        <p className="font-khmer text-base sm:text-lg md:text-xl leading-relaxed mb-4">
+        <p className="font-bokor text-base sm:text-lg md:text-xl leading-relaxed mb-4">
           {t.heroBigText}
         </p>
 

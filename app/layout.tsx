@@ -3,6 +3,16 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Battambang } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import {
+  bokor,
+  moul,
+  moulpali,
+  suwannaphum,
+  playfairDisplay,
+  oswald,
+  missFajardose,
+  imperialScript,
+} from "@/lib/fonts";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -39,7 +49,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body
+        className={`
+          ${bokor.variable}
+          ${moul.variable}
+          ${moulpali.variable}
+          ${suwannaphum.variable}
+          ${missFajardose.variable}
+          ${imperialScript.variable}
+          ${oswald.variable}
+          ${playfairDisplay.variable}
+          ${_geist.className}
+          ${_geistMono.className}
+          ${_battambang.className}
+          font-sans antialiased
+        `}
+      >
         {children}
         <Analytics />
       </body>
