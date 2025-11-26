@@ -35,7 +35,7 @@ export default function QRPaySection({
   return (
     <section
       aria-labelledby="qr-section-title"
-      className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-12 bg-gradient-to-b from-white via-rose-50 to-white"
+      className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-12 bg-linear-to-b from-white via-rose-50 to-white"
     >
       {/* Decorative heart accent */}
       <div className="pointer-events-none absolute -top-6 -right-6 opacity-10 transform rotate-12">
@@ -142,7 +142,7 @@ export default function QRPaySection({
                 </p>
               </div>
 
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 relative rounded-lg overflow-hidden bg-gray-50 p-1">
                   <Image
                     src={qrUsdUrl}

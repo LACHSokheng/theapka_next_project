@@ -42,6 +42,23 @@ export const translations: Record<Language, Record<string, string>> = {
     allRights: "All rights reserved",
     paymentTitle: "Payment QR Codes",
     paymentSub: "Scan or click on the QR Code to join hands.",
+    // Add these inside both "en" and "km" objects
+    groomLabel: "Son's name",
+    brideLabel: "Daughter's name",
+    groomName: "En Vordin",
+    brideName: "Lach Sokheng",
+    groomParents: "In & Sa Rern",
+    brideParents: "Tu Hoy & Vong Thi",
+    invitationMessage:
+      "Cordially Request The Honor Of Your Presence On The Auspicious Occasion Of The Wedding Of Our Children",
+    weddingDateTitle: "Date",
+    weddingTimeTitle: "Time",
+    weddingDay: "28",
+    weddingMonth: "February",
+    weddingYear: "2026",
+    weddingTime: "7:00 AM",
+    weddingLocation:
+      "Veal Ampil Village, Triel Commune, Taing Kork District, Kampong Thom Province",
   },
   km: {
     title: "សិរីមង្គលអាពាហ៍ពិពាហ៍",
@@ -82,5 +99,22 @@ export const translations: Record<Language, Record<string, string>> = {
     allRights: "រក្សាសិទ្ធិ",
     paymentTitle: "ចងដៃតាមរយៈ QR Code",
     paymentSub: "ស្កែន ឬ ចុចលើ QR Code ដើម្បីធ្វើការចងដៃ",
+    // Add these inside both "en" and "km" objects
+
+    groomLabel: "កូនប្រុសនាម",
+    brideLabel: "កូនស្រីនាម",
+    groomName: "អេង វ័រឌីន",
+    brideName: "ឡាច សុខហេង",
+    groomParents: " អុីន & សា រឿន",
+    brideParents: "ទុយ ហយ & វង្ស ធី",
+    invitationMessage:
+      "ឯកឧត្តម អ្នកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និង ប្រិយមិត្តអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំទាំងពីរ។",
+    weddingDateTitle: "ថ្ងៃខែ",
+    weddingTimeTitle: "ពេលវេលា",
+    weddingDay: "២៨",
+    weddingMonth: "កុម្ភៈ",
+    weddingYear: "២០២៦",
+    weddingTime: "វេលា ៧ ព្រឹក",
+    weddingLocation: "ភូមិវាលអំពិល ឃុំទ្រៀល ស្រុកតាំងគោក ខេត្តកំពង់ធំ",
   },
 };

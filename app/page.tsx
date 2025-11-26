@@ -10,6 +10,7 @@ import RSVPButton from "@/components/rsvp-button";
 import Footer from "@/components/footer";
 import type { Language } from "@/lib/translations";
 import QRPaySection from "@/components/qr-pay-section";
+import WeddingSection from "@/components/wedding-section";
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
@@ -41,7 +42,9 @@ export default function Home() {
       <StorySection language={language} />
       <EventSection language={language} />
       <QRCodeSection language={language} />
+
       <RSVPButton language={language} />
+      <WeddingSection language={language} />
       <QRPaySection language={language} />
       <Footer language={language} />
     </main>
