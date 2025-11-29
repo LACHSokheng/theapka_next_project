@@ -10,8 +10,6 @@ interface WeddingSectionProps {
 
 export default function WeddingSection({ language }: WeddingSectionProps) {
   const t = translations[language];
-  const groomImg = "/groom.jpg";
-  const birdIcon = "/icons/bird-icon.png";
 
   return (
     <div className="w-full min-h-screen bg-[#f7f4ef] p-4 flex flex-col items-center">
@@ -20,38 +18,61 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         {t.title}
       </h1>
 
-      {/* Photos */}
-      <div className="flex justify-between w-full px-4 gap-3">
-        <div className="flex flex-col items-center text-center">
-          <div className="w-32 h-40 rounded-2xl overflow-hidden shadow">
+      {/* Photos Wrapper */}
+      {/* Photos area: constrained width so layout centered on page */}
+      <div className="relative w-full max-w-3xl flex items-center justify-between gap-x-6 px-4">
+        {/* Groom column */}
+        <div className="w-44 sm:w-48 md:w-56 flex flex-col items-center text-center">
+          <div className="w-44 sm:w-48 md:w-56 h-56 sm:h-60 md:h-64 rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/groom.jpg"
               alt="groom"
-              width={200}
-              height={300}
+              width={360}
+              height={432}
               className="object-cover w-full h-full"
             />
           </div>
-          <p className="mt-2 text-orange-800 text-sm">{t.groomLabel}</p>
-          <p className="font-bold text-orange-900">{t.groomName}</p>
-          <p className="text-xs text-gray-700">{t.groomParents}</p>
+          <div className="mt-3">
+            <p className="text-orange-800 text-sm">{t.groomLabel}</p>
+            <p className="font-bold text-orange-900">{t.groomName}</p>
+            <p className="text-xs text-gray-700">{t.groomParents}</p>
+          </div>
         </div>
 
-        {/* <Image src="/bird-icon.png" alt="bird icon" /> */}
+        {/* Bird icon centered between the two person columns.
+            We use absolute + left-1/2 -translate-x-1/2 so it stays exactly centered.
+            -translate-y-10% pulls it slightly up so it sits between images (not covering text). */}
+        <motion.div
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 1.18, 1] }}
+          transition={{ repeat: Infinity, duration: 1.1, ease: "easeInOut" }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none"
+        >
+          <Image
+            src="/heart.png"
+            alt="heart icon"
+            width={80}
+            height={80}
+            className="drop-shadow-md w-16 md:w-20 h-16 md:h-20"
+          />
+        </motion.div>
 
-        <div className="flex flex-col items-center text-center">
-          <div className="w-32 h-40 rounded-2xl overflow-hidden shadow">
+        {/* Bride column */}
+        <div className="w-44 sm:w-48 md:w-56 flex flex-col items-center text-center">
+          <div className="w-44 sm:w-48 md:w-56 h-56 sm:h-60 md:h-64 rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/bride.jpg"
               alt="bride"
-              width={200}
-              height={300}
+              width={360}
+              height={432}
               className="object-cover w-full h-full"
             />
           </div>
-          <p className="mt-2 text-orange-800 text-sm">{t.brideLabel}</p>
-          <p className="font-bold text-orange-900">{t.brideName}</p>
-          <p className="text-xs text-gray-700">{t.brideParents}</p>
+          <div className="mt-3">
+            <p className="text-orange-800 text-sm">{t.brideLabel}</p>
+            <p className="font-bold text-orange-900">{t.brideName}</p>
+            <p className="text-xs text-gray-700">{t.brideParents}</p>
+          </div>
         </div>
       </div>
 
@@ -61,7 +82,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
       </p>
 
       {/* Divider */}
-      <div className="w-24 h-[2px] bg-orange-800 my-4"></div>
+      <div className="w-24 h-0.5 bg-orange-800 my-4"></div>
 
       {/* Date Section */}
       <div className="text-center mt-4">
