@@ -47,11 +47,11 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   openGraph: {
-    title: "Sophea & Sokha's Wedding",
+    title: "VORDIN & SOKHENG's Wedding",
     description:
-      "You're invited to Sophea & Sokha's wedding — details, RSVP and bilingual support in Khmer & English.",
-    url: "https://theapka.example/",
-    siteName: "Sophea & Sokha's Wedding",
+      "ឯកឧត្តម អ្នកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និង ប្រិយមិត្តអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំទាំងពីរ",
+    url: "https://theapka-ten.vercel.app/",
+    siteName: "VORDIN & SOKHENG's Wedding",
     images: [
       {
         url: "/logo.png",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sophea & Sokha's Wedding",
+    title: "VORDIN & SOKHENG's Wedding",
     description:
-      "You're invited to Sophea & Sokha's wedding — details, RSVP and bilingual support in Khmer & English.",
+      "ឯកឧត្តម អ្នកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និង ប្រិយមិត្តអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំទាំងពីរ",
     images: ["/logo.png"],
   },
 };
