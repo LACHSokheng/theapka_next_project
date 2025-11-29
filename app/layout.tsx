@@ -19,12 +19,18 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 const _battambang = Battambang({ weight: ["400", "700"], subsets: ["khmer"] });
 
 export const metadata: Metadata = {
-  title: "Sophea & Sokha's Wedding",
+  title: "VORDIN & SOKHENG's Wedding",
   description:
-    "Join us in celebrating our wedding with bilingual Khmer and English support",
-  generator: "v0.app",
+    "ឯកឧត្តម អ្នកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និង ប្រិយមិត្តអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំទាំងពីរ",
+  // generator: "v0.app",
   icons: {
     icon: [
+      // Primary favicon (SVG) — replace `favicon.svg` in `/public/` with your own icon if needed
+      {
+        url: "/logo.png",
+        type: "image/svg+xml",
+      },
+      // Standard PNG/legacy icons
       {
         url: "/icon-light-32x32.png",
         media: "(prefers-color-scheme: light)",
@@ -33,12 +39,31 @@ export const metadata: Metadata = {
         url: "/icon-dark-32x32.png",
         media: "(prefers-color-scheme: dark)",
       },
+      // Fallback ICO (optional)
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/favicon.ico",
       },
     ],
     apple: "/apple-icon.png",
+  },
+  openGraph: {
+    title: "Sophea & Sokha's Wedding",
+    description:
+      "You're invited to Sophea & Sokha's wedding — details, RSVP and bilingual support in Khmer & English.",
+    url: "https://theapka.example/",
+    siteName: "Sophea & Sokha's Wedding",
+    images: [
+      {
+        url: "/logo.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sophea & Sokha's Wedding",
+    description:
+      "You're invited to Sophea & Sokha's wedding — details, RSVP and bilingual support in Khmer & English.",
+    images: ["/logo.png"],
   },
 };
 
