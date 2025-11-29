@@ -11,6 +11,7 @@ import Footer from "@/components/footer";
 import type { Language } from "@/lib/translations";
 import QRPaySection from "@/components/qr-pay-section";
 import WeddingSection from "@/components/wedding-section";
+import CountdownSection from "@/components/countdown-section";
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
@@ -39,6 +40,8 @@ export default function Home() {
         onLanguageChange={handleLanguageChange}
       />
       <HeroSection language={language} />
+      <WeddingSection language={language} />
+      <CountdownSection language={language} />
       <StorySection language={language} />
       <EventSection language={language} />
       <QRCodeSection language={language} />

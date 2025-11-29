@@ -59,6 +59,16 @@ export const translations: Record<Language, Record<string, string>> = {
     weddingTime: "7:00 AM",
     weddingLocation:
       "Veal Ampil Village, Triel Commune, Taing Kork District, Kampong Thom Province",
+
+    // CountdownSection "en"
+    countdownTitle: "Countdown To The Wedding Day",
+    countdownSaveDate: "Save The Date",
+    countdownDays: "Days",
+    countdownHours: "Hours",
+    countdownMinutes: "Minutes",
+    countdownSeconds: "Seconds",
+    countdownDateText: "Wedding Date",
+    calendarTitle: "Mark Your Calendar",
   },
   km: {
     title: "សិរីមង្គលអាពាហ៍ពិពាហ៍",
@@ -116,5 +126,18 @@ export const translations: Record<Language, Record<string, string>> = {
     weddingYear: "២០២៦",
     weddingTime: "វេលា ៧ ព្រឹក",
     weddingLocation: "ភូមិវាលអំពិល ឃុំទ្រៀល ស្រុកតាំងគោក ខេត្តកំពង់ធំ",
+
+    /*
+      CountdownSection "km"
+
+    */
+    countdownTitle: "រាប់ថយក្រោយទៅថ្ងៃចូលរោងការ",
+    countdownSaveDate: "រក្សាទុកកាលបរិច្ឆេទ",
+    countdownDays: "ថ្ងៃ",
+    countdownHours: "ម៉ោង",
+    countdownMinutes: "នាទី",
+    countdownSeconds: "វិនាទី",
+    countdownDateText: "ថ្ងៃចូលរោងការ",
+    calendarTitle: "រូបភាពប្រតិទិន",
   },
 };
