@@ -39,14 +39,28 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
   }, []);
 
   return (
-    <section className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-black/60 backdrop-blur-sm">
+    <section className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-pink-200 backdrop-blur-sm overflow-hidden">
+      {/* Background image (absolute) */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/count-bg2.jpg"
+          alt="Decorative background"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 100vw"
+          // Slightly reduce the image opacity so the content sits more prominently
+          className="object-cover object-center sm:object-top opacity-40"
+        />
+        {/* subtle gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/40" />
+      </div>
       <h2 className="text-xl md:text-2xl font-semibold tracking-wide mb-2">
         {t.countdownSaveDate}
       </h2>
       <p className="text-lg md:text-xl">{t.countdownTitle}</p>
 
       {/* Countdown Box */}
-      <div className="mt-6 bg-white/10 border border-pink-300 rounded-2xl px-6 py-4 md:px-10 md:py-6 flex gap-4 md:gap-8">
+      <div className="mt-6 bg-pink-190 border border-pink-300 rounded-2xl px-6 py-4 md:px-10 md:py-6 flex gap-4 md:gap-8">
         <div className="text-center">
           <p className="text-3xl font-bold text-pink-400">{timeLeft.days}</p>
           <p className="text-sm">{t.countdownDays}</p>
