@@ -44,13 +44,9 @@ export default function Home() {
       <WeddingSection language={language} />
       <TimelineSection language={language} />
       <CountdownSection language={language} />
-      <StorySection language={language} />
-      <EventSection language={language} />
       <QRCodeSection language={language} />
-
-      <RSVPButton language={language} />
-      <WeddingSection language={language} />
       <QRPaySection language={language} />
+      <RSVPButton language={language} />
       <Footer language={language} />
     </main>
   );

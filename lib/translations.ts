@@ -81,7 +81,7 @@ export const translations: Record<Language, Record<string, string>> = {
     timeline1Time: "04:00 AM",
     timeline2: "Peace Ceremony", // 05:00 AM
     timeline2Time: "05:00 AM",
-    timeline3: "Meeting Guests of Honor and Preparing for the Parade", // 06:30 AM
+    timeline3: "Meeting with distinguished guests", // 06:30 AM
     timeline3Time: "06:30 AM",
     timeline4: "Palace Ceremony", // 07:00 AM
     timeline4Time: "07:00 AM",
@@ -93,7 +93,7 @@ export const translations: Record<Language, Record<string, string>> = {
     timeline7Time: "10:00 AM",
     timeline8: "Khan Sla Ceremony", // 11:00 AM
     timeline8Time: "11:00 AM",
-    timeline9: "Rotating the Lantern, Saluting the Head and Tieing Hands", // 12:00 PM
+    timeline9: "Bowing and clasping hands", // 12:00 PM
     timeline9Time: "12:00 PM",
     timeline10: "Receiving Guests of Honor with Dinner", // 5:00 PM
     timeline10Time: "05:00 PM",

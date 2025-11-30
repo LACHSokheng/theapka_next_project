@@ -12,6 +12,8 @@ interface CountdownSectionProps {
 export default function CountdownSection({ language }: CountdownSectionProps) {
   const t = translations[language];
   const weddingDate = new Date("2026-02-27T07:00:00"); // 27 Feb 2026 7AM
+  const decoraImg = "/decorative.png";
+  const isKhmer = language === "km";
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -39,7 +41,14 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
   }, []);
 
   return (
-    <section className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-pink-200 backdrop-blur-sm overflow-hidden">
+    <section
+      className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-pink-200 backdrop-blur-sm overflow-hidden"
+      style={{
+        fontFamily: isKhmer
+          ? "var(--font-bokor), var(--font-moul), sans-serif"
+          : "var(--font-Montserrat), var(--font-oswald), sans-serif",
+      }}
+    >
       {/* Background image (absolute) */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -54,9 +63,25 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
         {/* subtle gradient overlay for text readability */}
         <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/10 to-black/40" />
       </div>
-      <h2 className="text-xl md:text-2xl font-semibold tracking-wide mb-2">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 md:mb-4">
         {t.countdownSaveDate}
       </h2>
+
+      <div className="flex items-center justify-center gap-4 mt-6">
+        <div className="h-px w-8 bg-primary/30"></div>
+        {/* use the decorative image in the center */}
+        <div className="flex items-center justify-center">
+          <Image
+            src={decoraImg}
+            alt={t.timelineTitle || "decorative accent"}
+            width={200}
+            height={66}
+            className="object-contain w-20 md:w-28 lg:w-36 h-auto"
+            priority={false}
+          />
+        </div>
+        <div className="h-px w-8 bg-primary/30"></div>
+      </div>
       <p className="text-lg md:text-xl">{t.countdownTitle}</p>
 
       {/* Countdown Box */}
