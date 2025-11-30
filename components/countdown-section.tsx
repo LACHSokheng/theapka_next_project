@@ -52,7 +52,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
           className="object-cover object-center sm:object-top opacity-40"
         />
         {/* subtle gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/40" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/10 to-black/40" />
       </div>
       <h2 className="text-xl md:text-2xl font-semibold tracking-wide mb-2">
         {t.countdownSaveDate}

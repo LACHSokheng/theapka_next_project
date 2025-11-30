@@ -1,3 +1,5 @@
+import { time } from "console";
+
 export type Language = "en" | "km";
 
 export const translations: Record<Language, Record<string, string>> = {
@@ -16,7 +18,7 @@ export const translations: Record<Language, Record<string, string>> = {
     eventDetails: "Event Details",
     eventTitle: "Wedding Celebration",
     dateLabel: "Date",
-    eventDate: "Saturday, December 12, 2025",
+    eventDate: "Saturday, December 28, 2025",
     locationLabel: "Location",
     eventLocation: "Phnom Penh, Cambodia",
     moreInfo: "More Information",
@@ -69,6 +71,34 @@ export const translations: Record<Language, Record<string, string>> = {
     countdownSeconds: "Seconds",
     countdownDateText: "Wedding Date",
     calendarTitle: "Mark Your Calendar",
+
+    /*
+      Timeline Section "en"
+    */
+
+    timelineTitle: "Wedding Day Program",
+    timeline1: "Paly Town Ceremony", // 04:00 AM
+    timeline1Time: "04:00 AM",
+    timeline2: "Peace Ceremony", // 05:00 AM
+    timeline2Time: "05:00 AM",
+    timeline3: "Meeting Guests of Honor and Preparing for the Parade", // 06:30 AM
+    timeline3Time: "06:30 AM",
+    timeline4: "Palace Ceremony", // 07:00 AM
+    timeline4Time: "07:00 AM",
+    timeline5: "Ring Ceremony", // 08:00 AM
+    timeline5Time: "08:00 AM",
+    timeline6: "Reciting the Preah Paritta Mantra", // 09:00 AM
+    timeline6Time: "09:00 AM",
+    timeline7: "Hair Cutting Ceremony", // 10:00 AM
+    timeline7Time: "10:00 AM",
+    timeline8: "Khan Sla Ceremony", // 11:00 AM
+    timeline8Time: "11:00 AM",
+    timeline9: "Rotating the Lantern, Saluting the Head and Tieing Hands", // 12:00 PM
+    timeline9Time: "12:00 PM",
+    timeline10: "Receiving Guests of Honor with Dinner", // 5:00 PM
+    timeline10Time: "05:00 PM",
+    timeline11: "Dancing and Entertainment", // 5:30 PM
+    timeline11Time: "05:30 PM",
   },
   km: {
     title: "សិរីមង្គលអាពាហ៍ពិពាហ៍",
@@ -84,7 +114,7 @@ export const translations: Record<Language, Record<string, string>> = {
     eventDetails: "សម្ភារៈព័ត៌មានស្តីពីព្រឹត្តិការណ៍",
     eventTitle: "ពិធីប្រារព្ធលក្ខណ៍ពិសេស",
     dateLabel: "ថ្ងៃខែឆ្នាំ",
-    eventDate: "ថ្ងៃសៅរ៍ ១២ ធ្នូ ២០២៥",
+    eventDate: "ថ្ងៃសៅរ៍ ២៨ ធ្នូ ២០២៥",
     locationLabel: "ទីតាំង",
     eventLocation: "ព្នំពេញ ប្រទេសកម្ពុជា",
     moreInfo: "ព័ត៌មានលម្អិត",
@@ -139,5 +169,32 @@ export const translations: Record<Language, Record<string, string>> = {
     countdownSeconds: "វិនាទី",
     countdownDateText: "ថ្ងៃចូលរោងការ",
     calendarTitle: "រូបភាពប្រតិទិន",
+
+    /*
+      Timeline Section "km"
+    */
+    timelineTitle: "កម្មវិធីថ្ងៃពិធីមង្គលការ",
+    timeline1: "ពិធីក្រុងពាលី", // 04:00 AM
+    timeline1Time: "04:00 AM",
+    timeline2: "ពិធីសំពះពេលា", // 05:00 AM
+    timeline2Time: "05:00 AM",
+    timeline3: "ជួបជុំភ្ញៀវកិត្តិយសរៀបចំហែជំនួន", // 06:30 AM
+    timeline3Time: "06:30 AM",
+    timeline4: "ពិធីហែលជំនួន", // 07:00 AM
+    timeline4Time: "07:00 AM",
+    timeline5: "ពិធីបំពាក់ចិញ្ចៀន", // 08:00 AM
+    timeline5Time: "08:00 AM",
+    timeline6: "ពិធីសូត្រមន្តចម្រៀនព្រះបរិត្ត", // 09:00 AM
+    timeline6Time: "09:00 AM",
+    timeline7: "ពិធីកាត់សក់បង្នក់សិរី", // 10:00 AM
+    timeline7Time: "10:00 AM",
+    timeline8: "ពិធីជាវខាន់ស្លា", // 11:00 AM
+    timeline8Time: "11:00 AM",
+    timeline9: "ពិធីបង្វិលពពិល សំពះផ្ទឹមសែនចងដៃ", // 12:00 PM
+    timeline9Time: "12:00 PM",
+    timeline10: "ទទួលភ្ញៀវកិត្តិយសពិសា ភោជន៍អាហារពេលល្ងាច", // 5:00 PM
+    timeline10Time: "05:00 PM",
+    timeline11: "រាំរលេងកម្សាន្ត", // 5:30 PM
+    timeline11Time: "05:30 PM",
   },
 };

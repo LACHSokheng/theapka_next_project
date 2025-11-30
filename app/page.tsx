@@ -12,6 +12,7 @@ import type { Language } from "@/lib/translations";
 import QRPaySection from "@/components/qr-pay-section";
 import WeddingSection from "@/components/wedding-section";
 import CountdownSection from "@/components/countdown-section";
+import { TimelineSection } from "@/components/wedding-timeline";
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
@@ -41,6 +42,7 @@ export default function Home() {
       />
       <HeroSection language={language} />
       <WeddingSection language={language} />
+      <TimelineSection language={language} />
       <CountdownSection language={language} />
       <StorySection language={language} />
       <EventSection language={language} />
