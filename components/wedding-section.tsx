@@ -14,20 +14,25 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
   const groomIc = "/icons/groom_ic.svg";
   const brideIc = "/icons/bride_ic.svg";
   const decoraImg = "/decorative.png";
+  const bg = "/decoration/bg4.jpg";
 
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="w-full min-h-screen bg-wedding-soft px-4 py-10 flex flex-col items-center relative"
+      className="
+        w-full min-h-screen px-4 py-10 flex flex-col items-center relative 
+        bg-cover bg-center bg-no-repeat wedding-bg 
+      "
       style={{
+        // backgroundImage: "url('/decoration/bg5.jpg')",
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
           : "var(--font-oswald), var(--font-imperialScript), sans-serif",
       }}
     >
-      {/* Background floating accents */}
+      {/* Floating Background Accents */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 bg-orange-100 opacity-20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-20 w-40 h-40 bg-rose-100 opacity-30 rounded-full blur-3xl"></div>
@@ -38,20 +43,18 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         {t.title}
       </h1>
 
-      {/* Decorative line */}
+      {/* Decorative Line */}
       <div className="flex items-center justify-center gap-4">
         <div className="h-px w-8 bg-primary/30"></div>
-        {/* use the decorative image in the center */}
-        <div className="flex items-center justify-center">
-          <Image
-            src={decoraImg}
-            alt={t.timelineTitle || "decorative accent"}
-            width={200}
-            height={66}
-            className="object-contain w-20 md:w-28 lg:w-36 h-auto"
-            priority={false}
-          />
-        </div>
+
+        <Image
+          src={decoraImg}
+          alt={t.timelineTitle || "decorative accent"}
+          width={200}
+          height={66}
+          className="object-contain w-20 md:w-28 lg:w-36 h-auto"
+        />
+
         <div className="h-px w-8 bg-primary/30"></div>
       </div>
 
@@ -70,7 +73,6 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
               height={432}
               className="object-cover w-full h-full"
             />
-            {/* Small groom icon overlay */}
             <div className="absolute top-3 left-3 z-20">
               <Image
                 src={groomIc}
@@ -81,9 +83,9 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
               />
             </div>
           </div>
+
           <div className="mt-3">
             <p className="text-orange-700 text-sm">{t.groomLabel}</p>
-
             <p className="font-bold text-orange-900 font-eng text-lg">
               {t.groomName}
             </p>
@@ -91,7 +93,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
           </div>
         </motion.div>
 
-        {/* Heart icon */}
+        {/* Heart Icon */}
         <motion.div
           initial={{ scale: 0.9 }}
           animate={{ scale: [1, 1.2, 1] }}
@@ -120,7 +122,6 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
               height={432}
               className="object-cover w-full h-full"
             />
-            {/* Small bride icon overlay */}
             <div className="absolute top-3 left-3 z-20">
               <Image
                 src={brideIc}
@@ -131,6 +132,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
               />
             </div>
           </div>
+
           <div className="mt-3">
             <p className="text-orange-700 text-sm">{t.brideLabel}</p>
             <p className="font-bold text-orange-900 font-eng text-lg">
@@ -152,6 +154,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
       {/* Date Section */}
       <div className="text-center z-10">
         <p className="text-orange-700 font-semibold">{t.weddingDateTitle}</p>
+
         <div className="my-2">
           <p className="text-4xl md:text-5xl font-bold text-orange-900 font-eng">
             {t.weddingDay}
@@ -165,7 +168,6 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         </p>
         <p className="text-gray-800">{t.weddingTime}</p>
 
-        {/* Location */}
         <p className="mt-3 text-gray-800 text-sm md:text-base max-w-lg px-3 font-kh">
           {t.weddingLocation}
         </p>

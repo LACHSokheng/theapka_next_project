@@ -33,12 +33,14 @@ export default function QRPaySection({
   const t = translations[language];
   const isKhmer = language === "km";
   const decoraImg = "/decorative.png";
+  const bgImageUrl = "/decoration/bg6.jpg";
 
   return (
     <section
       aria-labelledby="qr-section-title"
       className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-12 bg-linear-to-b from-white via-rose-50 to-white"
       style={{
+        backgroundImage: `url('${bgImageUrl}')`,
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
           : "var(--font-oswald), var(--font-imperialScript), sans-serif",
@@ -64,7 +66,7 @@ export default function QRPaySection({
         <div className="text-center">
           <h2
             id="qr-section-title"
-            className=" text-2xl sm:text-3xl font-bold text-gray-900"
+            className=" text-2xl sm:text-3xl font-bold text-white"
           >
             {t.paymentTitle}
           </h2>
@@ -73,7 +75,7 @@ export default function QRPaySection({
           <div className="flex items-center justify-center gap-4 ">
             <div className="h-px w-8 bg-primary/30"></div>
             {/* use the decorative image in the center */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center ">
               <Image
                 src={decoraImg}
                 alt={t.timelineTitle || "decorative accent"}
@@ -85,7 +87,7 @@ export default function QRPaySection({
             </div>
             <div className="h-px w-8 bg-primary/30"></div>
           </div>
-          <p className="font-bokor mt-2 text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+          <p className="font-bokor mt-2 text-sm sm:text-base text-white/80 max-w-2xl mx-auto">
             {t.paymentSub}
           </p>
         </div>

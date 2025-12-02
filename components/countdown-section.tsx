@@ -42,7 +42,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
 
   return (
     <section
-      className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-red-400 backdrop-blur-sm overflow-hidden"
+      className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-red-800 backdrop-blur-sm overflow-hidden"
       style={{
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
@@ -62,7 +62,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
         {/* subtle gradient overlay for text readability */}
         <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/10 to-black/40" />
       </div>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 md:mb-4">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">
         {t.countdownSaveDate}
       </h2>
 

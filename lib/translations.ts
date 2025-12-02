@@ -143,7 +143,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     groomLabel: "កូនប្រុសនាម",
     brideLabel: "កូនស្រីនាម",
-    groomName: "អេង វ័រឌីន",
+    groomName: "អេន វ័រឌីន",
     brideName: "ឡាច សុខហេង",
     groomParents: " អុីន & សា រឿន",
     brideParents: "ទុយ ហយ & វង្ស ធី",
@@ -195,6 +195,6 @@ export const translations: Record<Language, Record<string, string>> = {
     timeline10: "ទទួលភ្ញៀវកិត្តិយសពិសា ភោជន៍អាហារពេលល្ងាច", // 5:00 PM
     timeline10Time: "05:00 PM",
     timeline11: "រាំរលេងកម្សាន្ត", // 5:30 PM
-    timeline11Time: "05:30 PM",
+    timeline11Time: "06:30 PM",
   },
 };

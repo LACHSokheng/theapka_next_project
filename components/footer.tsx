@@ -11,7 +11,7 @@ export default function Footer({ language }: FooterProps) {
 
   return (
     <footer
-      className="bg-primary text-primary-foreground py-8 px-4"
+      className="bg-red-900 text-primary-foreground py-8 px-4"
       style={{
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
