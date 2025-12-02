@@ -11,6 +11,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
   const bgImageUrl = "/heros/gold-bg.jpg";
   const vectorImg = "/heros/vector-frame.png";
   const frameImg = "/heros/gold-frame.png";
+  const isKhmer = language === "km";
 
   return (
     <section
@@ -20,7 +21,12 @@ export default function HeroSection({ language }: HeroSectionProps) {
         flex items-center justify-center
         px-4 sm:px-6 lg:px-16
       "
-      style={{ backgroundImage: `url('${bgImageUrl}')` }}
+      style={{
+        backgroundImage: `url('${bgImageUrl}')`,
+        fontFamily: isKhmer
+          ? "var(--font-bokor), var(--font-moul), sans-serif"
+          : "var(--font-imperialScript), var(--font-oswald), var(--font-imperialScript), sans-serif",
+      }}
     >
       {/* Background overlay */}
       <div className="absolute inset-0 bg-pink-800 bg-opacity-40"></div>
@@ -51,7 +57,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
 
       {/* Content */}
       <div className="relative z-20 text-center text-white max-w-2xl">
-        <h1 className="font-moul text-4xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8">
+        <h1 className=" text-3xl sm:text-4xl md:text-6xl font-bold mb-6 sm:mb-8">
           {t.title}
         </h1>
 
@@ -90,7 +96,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
           {t.heroBigText}
         </p>
 
-        <p className="font-khmer text-sm sm:text-base md:text-lg leading-relaxed opacity-90 mb-6 sm:mb-8">
+        <p className=" text-sm sm:text-base md:text-lg leading-relaxed opacity-90 mb-6 sm:mb-8">
           {t.heroSmallText}
         </p>
       </div>

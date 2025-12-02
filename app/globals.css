@@ -11,6 +11,7 @@
   --font-suwannaphum: "Suwannaphum";
   --font-playfair: "Playfair";
   --font-montserrat: "Montserrat";
+  --font-imperialScript: "Imperial";
 
   /* ---------- << COLORS >> --------- */
   --background: oklch(0.98 0 0);
@@ -70,10 +71,10 @@
 }
 /* English utility classes for local fonts */
 .font-imperialScript {
-  font-family: var(--font-ImperialScript);
+  font-family: var(--font-imperialScript);
 }
 .font-missFajardose {
-  font-family: var(--font-MissFajardose);
+  font-family: var(--font-missFajardose);
 }
 .font-oswald {
   font-family: var(--font-oswald);

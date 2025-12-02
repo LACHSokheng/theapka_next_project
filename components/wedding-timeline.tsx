@@ -55,7 +55,7 @@ export function TimelineSection({ language }: { language: Language }) {
       style={{
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
-          : "var(--font-playfair), var(--font-oswald), sans-serif",
+          : "var(--font-imperialScript), var(--font-imperialScript), sans-serif",
       }}
     >
       <div className="max-w-4xl mx-auto">
@@ -86,7 +86,7 @@ export function TimelineSection({ language }: { language: Language }) {
         </div>
 
         {/* Timeline Events */}
-        <div className="relative">
+        <div className="relative ">
           {/* Vertical line - responsive */}
           <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary/20 via-primary/50 to-primary/20 md:transform md:-translate-x-1/2" />
 

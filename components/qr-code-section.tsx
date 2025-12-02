@@ -17,8 +17,17 @@ export default function QRCodeSection({
     mapQueryStr
   )}&output=embed`;
 
+  const isKhmer = language === "km";
+
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-background">
+    <section
+      className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-background "
+      style={{
+        fontFamily: isKhmer
+          ? "var(--font-bokor), var(--font-moul), sans-serif"
+          : "var(--font-imperialScript), var(--font-oswald), sans-serif",
+      }}
+    >
       {/* Decorative Title */}
       <div className="flex justify-center items-center gap-3 mb-10">
         <div className="w-6 h-6 md:w-8 md:h-8 text-accent">
@@ -27,7 +36,7 @@ export default function QRCodeSection({
           </svg>
         </div>
 
-        <h2 className="font-khmer text-xl sm:text-2xl md:text-3xl font-bold text-center">
+        <h2 className=" text-3xl md:text-4xl lg:text-5xl sm:text-2xl font-bold text-center">
           {t.moreInfo}
         </h2>
 
@@ -40,7 +49,7 @@ export default function QRCodeSection({
 
       {/* Description */}
       <div className="max-w-3xl mx-auto text-center mb-8">
-        <p className="font-khmer text-sm sm:text-base leading-relaxed">
+        <p className=" text-sm sm:text-base leading-relaxed">
           {t.qrDescription}
         </p>
       </div>
@@ -77,7 +86,7 @@ export default function QRCodeSection({
               className="w-full h-full object-contain"
             />
           </div>
-          <p className="font-khmer text-xs sm:text-sm mt-2 text-muted-foreground">
+          <p className=" text-xs sm:text-sm mt-2 text-muted-foreground">
             {t.qrLabel}
           </p>
         </div>

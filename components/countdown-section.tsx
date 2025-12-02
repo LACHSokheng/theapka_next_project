@@ -46,10 +46,9 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
       style={{
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
-          : "var(--font-Montserrat), var(--font-oswald), sans-serif",
+          : "var(--font-imperialScript), var(--font-imperialScript), sans-serif",
       }}
     >
-      {/* Background image (absolute) */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/count-bg2.jpg"
@@ -67,7 +66,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
         {t.countdownSaveDate}
       </h2>
 
-      <div className="flex items-center justify-center gap-4 mt-6">
+      <div className="flex items-center justify-center gap-4">
         <div className="h-px w-8 bg-primary/30"></div>
         {/* use the decorative image in the center */}
         <div className="flex items-center justify-center">
@@ -82,6 +81,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
         </div>
         <div className="h-px w-8 bg-primary/30"></div>
       </div>
+
       <p className="text-lg md:text-xl">{t.countdownTitle}</p>
 
       {/* Countdown Box */}

@@ -12,6 +12,7 @@ import {
   oswald,
   missFajardose,
   imperialScript,
+  montserrat,
 } from "@/lib/fonts";
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -82,6 +83,7 @@ export default function RootLayout({
           ${suwannaphum.variable}
           ${missFajardose.variable}
           ${imperialScript.variable}
+          ${montserrat.variable}
           ${oswald.variable}
           ${playfairDisplay.variable}
           ${_geist.className}

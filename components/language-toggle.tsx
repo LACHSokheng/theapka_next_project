@@ -16,9 +16,17 @@ export default function LanguageToggle({
     { code: "en", label: "EN", img: "/en.png" },
     { code: "km", label: "ខ្មែរ", img: "/kh.png" },
   ];
+  const isKhmer = currentLanguage === "km";
 
   return (
-    <div className="fixed top-4 left-4 z-50 bg-white rounded-full shadow-md flex items-center p-1">
+    <div
+      className="fixed top-4 left-4 z-50 bg-white rounded-full shadow-md flex items-center p-1"
+      style={{
+        fontFamily: isKhmer
+          ? "var(--font-bokor), var(--font-moul), sans-serif"
+          : "var(--font-oswald), var(--font-imperialScript), sans-serif",
+      }}
+    >
       {languages.map((lang) => (
         <button
           key={lang.code}
