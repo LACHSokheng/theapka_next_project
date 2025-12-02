@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ language }: HeroSectionProps) {
   const t = translations[language];
-  const bgImageUrl = "/heros/gold-bg.jpg";
+  const bgImageUrl = "/decoration/bg2.jpg";
   const vectorImg = "/heros/vector-frame.png";
   const frameImg = "/heros/gold-frame.png";
   const isKhmer = language === "km";
@@ -29,7 +29,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
       }}
     >
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-pink-800 bg-opacity-40"></div>
+      <div className="absolute inset-0  bg-opacity-40"></div>
 
       {/* Corner decorations */}
       <Image

@@ -11,6 +11,9 @@ interface WeddingSectionProps {
 export default function WeddingSection({ language }: WeddingSectionProps) {
   const t = translations[language];
   const isKhmer = language === "km";
+  const groomIc = "/icons/groom_ic.svg";
+  const brideIc = "/icons/bride_ic.svg";
+  const decoraImg = "/decorative.png";
 
   return (
     <motion.div
@@ -35,6 +38,23 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         {t.title}
       </h1>
 
+      {/* Decorative line */}
+      <div className="flex items-center justify-center gap-4">
+        <div className="h-px w-8 bg-primary/30"></div>
+        {/* use the decorative image in the center */}
+        <div className="flex items-center justify-center">
+          <Image
+            src={decoraImg}
+            alt={t.timelineTitle || "decorative accent"}
+            width={200}
+            height={66}
+            className="object-contain w-20 md:w-28 lg:w-36 h-auto"
+            priority={false}
+          />
+        </div>
+        <div className="h-px w-8 bg-primary/30"></div>
+      </div>
+
       {/* Photos Wrapper */}
       <div className="relative w-full max-w-4xl flex flex-col sm:flex-row items-center justify-between gap-y-8 sm:gap-x-10 px-3 z-10">
         {/* Groom */}
@@ -42,7 +62,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
           whileHover={{ scale: 1.05 }}
           className="max-w-[230px] flex flex-col items-center text-center"
         >
-          <div className="w-full h-60 md:h-72 rounded-3xl overflow-hidden shadow-xl">
+          <div className="relative w-full h-60 md:h-72 rounded-3xl overflow-hidden shadow-xl">
             <Image
               src="/groom.jpg"
               alt="Groom"
@@ -50,9 +70,20 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
               height={432}
               className="object-cover w-full h-full"
             />
+            {/* Small groom icon overlay */}
+            <div className="absolute top-3 left-3 z-20">
+              <Image
+                src={groomIc}
+                alt="Groom icon"
+                width={44}
+                height={44}
+                className="rounded-full shadow-md"
+              />
+            </div>
           </div>
           <div className="mt-3">
             <p className="text-orange-700 text-sm">{t.groomLabel}</p>
+
             <p className="font-bold text-orange-900 font-eng text-lg">
               {t.groomName}
             </p>
@@ -81,7 +112,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
           whileHover={{ scale: 1.05 }}
           className="max-w-[230px] flex flex-col items-center text-center"
         >
-          <div className="w-full h-60 md:h-72 rounded-3xl overflow-hidden shadow-xl">
+          <div className="relative w-full h-60 md:h-72 rounded-3xl overflow-hidden shadow-xl">
             <Image
               src="/bride.jpg"
               alt="Bride"
@@ -89,6 +120,16 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
               height={432}
               className="object-cover w-full h-full"
             />
+            {/* Small bride icon overlay */}
+            <div className="absolute top-3 left-3 z-20">
+              <Image
+                src={brideIc}
+                alt="Bride icon"
+                width={44}
+                height={44}
+                className="rounded-full shadow-md"
+              />
+            </div>
           </div>
           <div className="mt-3">
             <p className="text-orange-700 text-sm">{t.brideLabel}</p>
