@@ -45,7 +45,6 @@ export default function Home() {
       <WeddingSection language={language} />
       <CountdownSection language={language} />
       <TimelineSection language={language} />
-      <CountdownSection language={language} />
       <QRCodeSection language={language} />
       <QRPaySection language={language} />
       <ThanksSection language={language} />

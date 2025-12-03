@@ -42,7 +42,7 @@ export default function QRPaySection({
 
   return (
     <section
-      className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-12 bg-gradient-to-b from-white via-rose-50/40 to-white"
+      className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-12 bg-linear-to-b from-white via-rose-50/40 to-white"
       style={{
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"

@@ -61,11 +61,10 @@ export function TimelineSection({ language }: { language: Language }) {
       transition={{ duration: 1 }}
       className="
         w-full min-h-screen px-4 py-10 flex flex-col items-center relative 
-        bg-cover bg-center bg-no-repeat wedding-bg
-        text-white 
+        bg-cover bg-center bg-no-repeat wedding-bg 
       "
       style={{
-        backgroundImage: "url('/decoration/bg5.jpg')",
+        backgroundImage: "url('/decoration/bg11.jpg')",
 
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
