@@ -99,6 +99,9 @@ export const translations: Record<Language, Record<string, string>> = {
     timeline10Time: "05:00 PM",
     timeline11: "Dancing and Entertainment", // 5:30 PM
     timeline11Time: "05:30 PM",
+
+    thanksMessage:
+      "My wife/husband and I, as the hosts of this wedding, and the parents of the bride/groom, would like to express our deepest gratitude for your presence as honored guests at our wedding ceremony. We wish Your Excellencies, distinguished Oknha (Lords/Magnates), Lok Chumteav (Lady Oknha), Ladies and Gentlemen, Madams, Misses, and all our friends good health and success in all your endeavors. Thank you",
   },
   km: {
     title: "សិរីមង្គលអាពាហ៍ពិពាហ៍",
@@ -196,5 +199,8 @@ export const translations: Record<Language, Record<string, string>> = {
     timeline10Time: "05:00 PM",
     timeline11: "រាំរលេងកម្សាន្ត", // 5:30 PM
     timeline11Time: "06:30 PM",
+
+    thanksMessage:
+      "ខ្ញុំបាទ នាងខ្ញុំ ជាម្ចាស់កម្មវិធី រួមទាំងជាមាតាបិតា របស់កូនប្រុស កូនស្រី សូមថ្លែងអំណរគុណ យ៉ាងជ្រាលជ្រៅ ចំពោះការ អញ្ជើញ ចូលរួមជាភ្ញៀវកិត្តិយសក្នុង កម្មវិធីរៀបអាពាហ៍ពិពាហ៍របស់យើងខ្ញុំ។ យើងខ្ញុំសូមជូនពរ ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងមិត្តភក្តិទាំងអស់គ្នា អោយមាន សុខភាព ល្អ និងទទួលជោគជ័យគ្រប់ភារកិច្ច។ សូមអរគុណ!",
   },
 };

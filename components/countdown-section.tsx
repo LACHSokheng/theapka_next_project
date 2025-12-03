@@ -42,7 +42,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
 
   return (
     <section
-      className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-red-800 backdrop-blur-sm overflow-hidden"
+      className="relative flex flex-col items-center text-center py-16 px-6 text-white bg-[#790203] backdrop-blur-sm overflow-hidden"
       style={{
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
@@ -57,7 +57,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
           priority
           sizes="(max-width: 768px) 100vw, 100vw"
           // Slightly reduce the image opacity so the content sits more prominently
-          className="object-cover object-center sm:object-top opacity-60"
+          className="object-cover object-center sm:object-top opacity-70"
         />
         {/* subtle gradient overlay for text readability */}
         <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/10 to-black/40" />

@@ -26,12 +26,13 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         bg-cover bg-center bg-no-repeat wedding-bg 
       "
       style={{
-        // backgroundImage: "url('/decoration/bg5.jpg')",
+        backgroundImage: "url('/decoration/bg11.jpg')",
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
           : "var(--font-oswald), var(--font-imperialScript), sans-serif",
       }}
     >
+      <div className="absolute inset-0 bg-black/10"></div>
       {/* Floating Background Accents */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 left-10 w-32 h-32 bg-orange-100 opacity-20 rounded-full blur-3xl"></div>
@@ -39,7 +40,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
       </div>
 
       {/* Title */}
-      <h1 className="text-center text-2xl md:text-3xl font-semibold text-orange-800 font-eng mb-8 z-10">
+      <h1 className=" text-3xl sm:text-4xl md:text-6xl sm:mb-8 font-semibold text-white font-eng mb-6 z-10">
         {t.title}
       </h1>
 
@@ -85,11 +86,11 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
           </div>
 
           <div className="mt-3">
-            <p className="text-orange-700 text-sm">{t.groomLabel}</p>
-            <p className="font-bold text-orange-900 font-eng text-lg">
+            <p className="text-[#E8BC7A] text-sm">{t.groomLabel}</p>
+            <p className="font-bold text-[#F5C16C] font-eng text-lg">
               {t.groomName}
             </p>
-            <p className="text-xs text-gray-700">{t.groomParents}</p>
+            <p className="text-xs text-white">{t.groomParents}</p>
           </div>
         </motion.div>
 
@@ -134,41 +135,41 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
           </div>
 
           <div className="mt-3">
-            <p className="text-orange-700 text-sm">{t.brideLabel}</p>
-            <p className="font-bold text-orange-900 font-eng text-lg">
+            <p className="text-[#E8BC7A] text-sm">{t.brideLabel}</p>
+            <p className="font-bold text-[#F5C16C] font-eng text-lg">
               {t.brideName}
             </p>
-            <p className="text-xs text-gray-700">{t.brideParents}</p>
+            <p className="text-xs text-white">{t.brideParents}</p>
           </div>
         </motion.div>
       </div>
 
       {/* Invitation Message */}
-      <p className="mt-8 text-center text-gray-800 text-sm md:text-base leading-7 max-w-xl font-kh z-10">
+      <p className="mt-8 text-center text-white text-sm md:text-base leading-7 max-w-xl font-kh z-10">
         {t.invitationMessage}
       </p>
 
       {/* Divider */}
-      <div className="w-24 h-0.5 bg-orange-800 my-5 opacity-70"></div>
+      <div className="w-24 h-0.5 bg-[#F5C16C] my-5 opacity-70"></div>
 
       {/* Date Section */}
       <div className="text-center z-10">
-        <p className="text-orange-700 font-semibold">{t.weddingDateTitle}</p>
+        <p className="text-[#E8BC7A] font-semibold">{t.weddingDateTitle}</p>
 
         <div className="my-2">
-          <p className="text-4xl md:text-5xl font-bold text-orange-900 font-eng">
+          <p className="text-4xl md:text-5xl font-bold text-[#F5C16C] font-eng">
             {t.weddingDay}
           </p>
-          <p className="text-gray-800">{t.weddingMonth}</p>
-          <p className="text-gray-800">{t.weddingYear}</p>
+          <p className="text-white">{t.weddingMonth}</p>
+          <p className="text-white">{t.weddingYear}</p>
         </div>
 
-        <p className="text-orange-700 font-semibold mt-3">
+        <p className="text-[#E8BC7A] font-semibold mt-3">
           {t.weddingTimeTitle}
         </p>
-        <p className="text-gray-800">{t.weddingTime}</p>
+        <p className="text-white">{t.weddingTime}</p>
 
-        <p className="mt-3 text-gray-800 text-sm md:text-base max-w-lg px-3 font-kh">
+        <p className="mt-3 text-white text-sm md:text-base max-w-lg px-3 font-kh">
           {t.weddingLocation}
         </p>
       </div>

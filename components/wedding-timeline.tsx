@@ -51,7 +51,8 @@ export function TimelineSection({ language }: { language: Language }) {
     },
   ];
 
-  const decoraImg = "/decorative.png";
+  // const decoraImg = "/decorative.png";
+  const decoraImg = "/decoration/deco2.png";
 
   return (
     <motion.div
@@ -65,6 +66,7 @@ export function TimelineSection({ language }: { language: Language }) {
       "
       style={{
         backgroundImage: "url('/decoration/bg5.jpg')",
+
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
           : "var(--font-oswald), var(--font-imperialScript), sans-serif",

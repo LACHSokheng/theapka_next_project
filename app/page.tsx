@@ -13,6 +13,7 @@ import QRPaySection from "@/components/qr-pay-section";
 import WeddingSection from "@/components/wedding-section";
 import CountdownSection from "@/components/countdown-section";
 import { TimelineSection } from "@/components/wedding-timeline";
+import ThanksSection from "@/components/thanks-section";
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
@@ -42,10 +43,12 @@ export default function Home() {
       />
       <HeroSection language={language} />
       <WeddingSection language={language} />
+      <CountdownSection language={language} />
       <TimelineSection language={language} />
       <CountdownSection language={language} />
       <QRCodeSection language={language} />
       <QRPaySection language={language} />
+      <ThanksSection language={language} />
       <RSVPButton language={language} />
       <Footer language={language} />
     </main>
