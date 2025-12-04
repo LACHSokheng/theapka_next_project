@@ -42,8 +42,9 @@ export default function QRPaySection({
 
   return (
     <section
-      className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-12 bg-linear-to-b from-white via-rose-50/40 to-white"
+      className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-12 bg-[#510000] bg-linear-to-b from-white via-rose-50/40 to-white"
       style={{
+        backgroundImage: "url('/decoration/flower-bg1.png')",
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
           : "var(--font-oswald), var(--font-imperialScript), sans-serif",
@@ -51,10 +52,10 @@ export default function QRPaySection({
     >
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-rose-700 drop-shadow-sm">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white drop-shadow-sm">
             {t.paymentTitle}
           </h2>
-          <p className="mt-2 text-sm sm:text-base text-gray-600 max-w-xl mx-auto">
+          <p className="mt-2 text-sm sm:text-base text-white/90 max-w-xl mx-auto">
             {t.paymentSub}
           </p>
         </div>

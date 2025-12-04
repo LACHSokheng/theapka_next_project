@@ -43,12 +43,13 @@ export default function Home() {
       />
       <HeroSection language={language} />
       <WeddingSection language={language} />
-      <CountdownSection language={language} />
       <TimelineSection language={language} />
+      <CountdownSection language={language} />
+      {/* <TimelineSection language={language} /> */}
       <QRCodeSection language={language} />
       <QRPaySection language={language} />
       <ThanksSection language={language} />
-      <RSVPButton language={language} />
+      {/* <RSVPButton language={language} /> */}
       <Footer language={language} />
     </main>
   );

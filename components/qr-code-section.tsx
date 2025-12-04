@@ -21,8 +21,9 @@ export default function QRCodeSection({
 
   return (
     <section
-      className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-background "
+      className="py-16 px-4 md:px-8 lg:px-16 xl:px-24 bg-[#510000] "
       style={{
+        backgroundImage: "url('/decoration/flower-bg3.png')",
         fontFamily: isKhmer
           ? "var(--font-bokor), var(--font-moul), sans-serif"
           : "var(--font-imperialScript), var(--font-oswald), sans-serif",
@@ -36,7 +37,7 @@ export default function QRCodeSection({
           </svg>
         </div>
 
-        <h2 className=" text-3xl md:text-4xl lg:text-5xl sm:text-2xl font-bold text-center">
+        <h2 className=" text-3xl md:text-4xl lg:text-5xl sm:text-2xl font-bold text-center text-white">
           {t.moreInfo}
         </h2>
 
@@ -49,7 +50,7 @@ export default function QRCodeSection({
 
       {/* Description */}
       <div className="max-w-3xl mx-auto text-center mb-8">
-        <p className=" text-sm sm:text-base leading-relaxed">
+        <p className=" text-sm sm:text-base leading-relaxed text-white/90">
           {t.qrDescription}
         </p>
       </div>
@@ -86,9 +87,6 @@ export default function QRCodeSection({
               className="w-full h-full object-contain"
             />
           </div>
-          <p className=" text-xs sm:text-sm mt-2 text-muted-foreground">
-            {t.qrLabel}
-          </p>
         </div>
 
         {/* Google Map */}
