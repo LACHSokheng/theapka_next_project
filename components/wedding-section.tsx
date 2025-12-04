@@ -14,7 +14,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
   const groomIc = "/icons/groom_ic.svg";
   const brideIc = "/icons/bride_ic.svg";
   const decoraImg = "/decorative.png";
-  const bg = "/decoration/bg4.jpg";
+  // const bg = "/decoration/bg4.jpg";
 
   return (
     <motion.div
@@ -68,7 +68,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         >
           <div className="relative w-full h-60 md:h-72 rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/groom.jpg"
+              src="/groom.JPG"
               alt="Groom"
               width={360}
               height={432}
