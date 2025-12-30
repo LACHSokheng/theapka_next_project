@@ -111,7 +111,7 @@ export default function CountdownSection({ language }: CountdownSectionProps) {
       <div className="mt-6 flex flex-col items-center">
         <h3 className="text-base opacity-80 mb-2">{t.calendarTitle}</h3>
         <Image
-          src="/calendar.jpg"
+          src="/calandar.jpg"
           alt="Calendar"
           width={400}
           height={400}
