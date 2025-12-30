@@ -40,7 +40,8 @@ export const translations: Record<Language, Record<string, string>> = {
     submit: "Submit RSVP",
     close: "Close",
     totalResponses: "Total Responses",
-    footer: "Thank you for celebrating with us",
+    footer:
+      "Thank you for joining our event, and we sincerely apologize for any mistakes or shortcomings that we may not have handled well during this event.",
     allRights: "All rights reserved",
     paymentTitle: "Payment QR Codes",
     paymentSub: "Scan or click on the QR Code to join hands.",
@@ -138,7 +139,8 @@ export const translations: Record<Language, Record<string, string>> = {
     submit: "ដាក់ស្នើ RSVP",
     close: "បិទ",
     totalResponses: "ចម្លើយសរុប",
-    footer: "សូមអរគុណដែលបានរៀបចំការលើកលម្អរមួយជាមួយយើង",
+    footer:
+      "សូមអរគុណដែលបានចូលរួមកម្មវិធីយើងខ្ញុំទាំងពីរ ហើយសូមអធ្យាស្រ័យរាល់កំហុសខុសឆ្គងទាំងឡាយណាយើងខ្ញុំទាំងពីរធ្វើមិនបានល្អក្នុងកម្មវិធីនេះ",
     allRights: "រក្សាសិទ្ធិ",
     paymentTitle: "ចងដៃតាមរយៈ QR Code",
     paymentSub: "ស្កែន ឬ ចុចលើ QR Code ដើម្បីធ្វើការចងដៃ",
