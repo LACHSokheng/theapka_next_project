@@ -11,7 +11,7 @@ interface CountdownSectionProps {
 
 export default function CountdownSection({ language }: CountdownSectionProps) {
   const t = translations[language];
-  const weddingDate = new Date("2026-02-27T07:00:00"); // 27 Feb 2026 7AM
+  const weddingDate = new Date("2026-02-28T07:00:00"); // 28 Feb 2026 7AM
   const decoraImg = "/decorative.png";
   const isKhmer = language === "km";
 

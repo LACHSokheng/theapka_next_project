@@ -50,7 +50,7 @@ export const translations: Record<Language, Record<string, string>> = {
     brideLabel: "Daughter's name",
     groomName: "En Vordin",
     brideName: "Lach Sokheng",
-    groomParents: "In & Sa Rern",
+    groomParents: "Ouk SamIn & Chan SaRern",
     brideParents: "Tu Hoy & Vong Thi",
     invitationMessage:
       "Cordially Request The Honor Of Your Presence On The Auspicious Occasion Of The Wedding Of Our Children",
@@ -150,7 +150,7 @@ export const translations: Record<Language, Record<string, string>> = {
     brideLabel: "កូនស្រីនាម",
     groomName: "អេន វ័រឌីន",
     brideName: "ឡាច សុខហេង",
-    groomParents: " អុីន & សា រឿន",
+    groomParents: " អ៊ុក សំអ៉ីន & ចាន់ សារឿន",
     brideParents: "ទុយ ហយ & វង្ស ធី",
     invitationMessage:
       "ឯកឧត្តម អ្នកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និង ប្រិយមិត្តអញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ប្រសិទ្ធិពរជ័យសិរីសួស្តី ជ័យមង្គល ក្នុងពិធីអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំទាំងពីរ។",
