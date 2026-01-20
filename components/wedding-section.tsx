@@ -68,7 +68,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         >
           <div className="relative w-full h-60 md:h-72 rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/10.JPEG"
+              src="/10.jpeg"
               alt="Groom"
               width={360}
               height={432}
@@ -117,7 +117,7 @@ export default function WeddingSection({ language }: WeddingSectionProps) {
         >
           <div className="relative w-full h-60 md:h-72 rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/groom.JPG"
+              src="/groom.jpg"
               alt="Bride"
               width={360}
               height={432}
